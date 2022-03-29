@@ -29,7 +29,7 @@ const exit=(customer)=>{
 takeOrder('Customer 1', (customer)=>{ // defination of process_callback_1
     processOrder(customer, (customer)=>{ // defination of complete_callback_2
         completeOrder(customer, (customer)=>{ // defination of payment_callback_3
-            makePayment(customer, (customer)=>{ // defination of exit_callback_3
+            makePayment(customer, (customer)=>{ // defination of exit_callback_4
                 exit(customer)
             })
         })
